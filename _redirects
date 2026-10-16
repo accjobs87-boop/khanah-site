@@ -1,0 +1,6 @@
+# رابط الدعوة: khanah.app/i/CODE يفتح التطبيق بالكود
+/i/:code  https://app.khanah.app/?ref=:code  302
+/app      https://app.khanah.app/  302
+# دعوة جروب: khanah.app/g/CODE صفحة فيها اسم الجروب وأزرار الفتح والتنزيل
+/g/:code  /g.html  200
+/android  https://play.google.com/store/apps/details?id=app.khanah  302

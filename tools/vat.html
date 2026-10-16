@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-c="SA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة ضريبة القيمة المضافة 15% السعودية و14% مصر | خانة</title>
+<meta name="description" content="احسب ضريبة القيمة المضافة: إضافة الضريبة للمبلغ أو استخراجها من مبلغ شامل الضريبة، 15% في السعودية و14% في مصر.">
+<link rel="canonical" href="https://khanah.app/tools/vat.html">
+<meta name="theme-color" content="#1DAA61">
+<link rel="icon" href="../assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-tool="vat">
+<header class="top"><div class="wrap">
+  <a class="logo" href="../"><img src="../assets/icon-192.png" alt="">خانة</a>
+  <nav class="nav"><div class="pill-sw"><button data-set-c="SA">السعودية</button><button data-set-c="EG">مصر</button></div><a class="btn pri sm" href="../#join">حمل خانة</a></nav>
+</div></header>
+<main>
+  <section>
+    <div class="wrap">
+      <h1 class="h2">حاسبة ضريبة القيمة المضافة</h1>
+      <p class="sub">أضف الضريبة لمبلغ، أو استخرجها من فاتورة شاملة الضريبة.</p>
+      <div class="tool">
+        <div class="seg" id="rate"><button data-v="15">15% السعودية</button><button data-v="14">14% مصر</button><button data-v="0">نسبة أخرى</button></div>
+        <div class="seg" id="mode"><button class="on" data-v="add">إضافة الضريبة</button><button data-v="extract">استخراج الضريبة</button></div>
+        <div class="row">
+          <label class="f"><span>المبلغ</span><input class="i" id="amount" inputmode="decimal" placeholder="0"></label>
+          <label class="f" id="customWrap" style="display:none"><span>النسبة %</span><input class="i" id="custom" inputmode="decimal" placeholder="5"></label>
+        </div>
+        <div class="result" id="out"></div>
+        <div class="cta-card">
+          <img src="../assets/icon-192.png" alt="">
+          <div><b>سجل مشترياتك شاملة الضريبة</b><p>في خانة تعلم على "شامل الضريبة" ويطلع لك مبلغ الضريبة في كل حركة.</p></div>
+          <a class="btn pri sm" href="../#join">احجز مكانك</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="alt">
+    <div class="wrap">
+      <h2 class="h2">طريقة الحساب</h2>
+      <details><summary>كيف أضيف 15% للمبلغ؟</summary><p>اضرب المبلغ في 1.15. مثلا 100 ريال تصير 115 منها 15 ضريبة.</p></details>
+      <details><summary>كيف أستخرج الضريبة من مبلغ شامل؟</summary><p>اقسم المبلغ على 1.15 عشان تعرف السعر قبل الضريبة، والفرق هو الضريبة. مثلا 115 ريال فيها 15 ضريبة. وفي مصر اقسم على 1.14.</p></details>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><a href="../">خانة</a><a href="salary.html">باقي على الراتب</a><a href="zakat.html">حاسبة الزكاة</a><a href="jamiya.html">حاسبة الجمعية</a><a href="../privacy.html">الخصوصية</a><span class="copy">© 2026 خانة</span></div></footer>
+<script src="../assets/site.js"></script>
+<script src="../assets/tools.js"></script>
+</body>
+</html>

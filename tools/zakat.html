@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-c="SA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة الزكاة: زكاة المال والذهب والفضة والأسهم | خانة</title>
+<meta name="description" content="احسب زكاة مالك بالريال أو الجنيه: النقد والذهب عيار 24 و21 و18 والفضة والأسهم وعروض التجارة والديون، بالنصاب الصحيح 85 جرام ذهب أو 595 جرام فضة.">
+<link rel="canonical" href="https://khanah.app/tools/zakat.html">
+<meta name="theme-color" content="#1DAA61">
+<link rel="icon" href="../assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-tool="zakat">
+<header class="top"><div class="wrap">
+  <a class="logo" href="../"><img src="../assets/icon-192.png" alt="">خانة</a>
+  <nav class="nav"><div class="pill-sw"><button data-set-c="SA">السعودية</button><button data-set-c="EG">مصر</button></div><a class="btn pri sm" href="../#join">حمل خانة</a></nav>
+</div></header>
+<main>
+  <section>
+    <div class="wrap">
+      <h1 class="h2">حاسبة الزكاة</h1>
+      <p class="sub">اكتب اللي عندك، والحاسبة تطلع الوعاء الزكوي والنصاب ومقدار الزكاة 2.5%. المبالغ بالعملة اللي تختارها فوق.</p>
+      <div class="tool">
+        <div class="row">
+          <label class="f"><span>النقد في البيت والحسابات</span><input class="i" id="cash" inputmode="decimal" placeholder="0"></label>
+          <label class="f"><span>سعر جرام الذهب عيار 24 اليوم</span><input class="i" id="goldPrice" inputmode="decimal" placeholder="0"></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>الذهب المدخر: سبائك وجنيهات (جرام)</span><input class="i" id="gold" inputmode="decimal" placeholder="0"></label>
+          <label class="f"><span>العيار</span><select class="i" id="karat"><option>24</option><option>22</option><option selected>21</option><option>18</option></select></label>
+        </div>
+        <label class="f" style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="incJ" style="margin-top:8px"><span style="margin:0">أحسب زكاة حلي الزينة المستعملة<br><small>فيها خلاف بين العلماء: الجمهور لا زكاة في الحلي المستعمل للزينة، وقال آخرون بوجوبها. اختر حسب من تتبع.</small></span></label>
+        <div class="row" id="jWrap" style="display:none">
+          <label class="f"><span>حلي الزينة (جرام)</span><input class="i" id="jewel" inputmode="decimal" placeholder="0"></label>
+          <label class="f"><span>العيار</span><select class="i" id="jkarat"><option>24</option><option>22</option><option selected>21</option><option>18</option></select></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>الفضة (جرام)</span><input class="i" id="silver" inputmode="decimal" placeholder="0"></label>
+          <label class="f"><span>سعر جرام الفضة</span><input class="i" id="silverPrice" inputmode="decimal" placeholder="0"></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>الأسهم والصناديق (القيمة السوقية)</span><input class="i" id="invest" inputmode="decimal" placeholder="0"></label>
+          <label class="f"><span>عروض التجارة بسعر البيع</span><input class="i" id="trade" inputmode="decimal" placeholder="0"></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>ديون لك مرجوة السداد</span><input class="i" id="recv" inputmode="decimal" placeholder="0"></label>
+          <label class="f"><span>ديون عليك حالة الآن</span><input class="i" id="debts" inputmode="decimal" placeholder="0"></label>
+        </div>
+        <div class="seg" id="basis"><button class="on" data-v="gold">النصاب بالذهب</button><button data-v="silver">النصاب بالفضة</button></div>
+        <div class="result" id="out"></div>
+        <p class="sub" style="font-size:14px;margin:12px 0 0">الحاسبة للتقريب. في الحالات الخاصة مثل العقار المعد للتجارة أو الشركات اسأل أهل العلم.</p>
+        <div class="cta-card">
+          <img src="../assets/icon-192.png" alt="">
+          <div><b>خانة يذكرك قبل موعد الحول</b><p>تحدد يوم الحول بالهجري، ويذكرك قبله بأسبوع، ويحسب النقد من حساباتك تلقائيا.</p></div>
+          <a class="btn pri sm" href="../#join">احجز مكانك</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="alt">
+    <div class="wrap">
+      <h2 class="h2">أسئلة عن الزكاة</h2>
+      <details><summary>كم نصاب الزكاة؟</summary><p>قيمة 85 جرام ذهب عيار 24، أو 595 جرام فضة. والنصاب بالفضة أقل فهو أحوط للفقير.</p></details>
+      <details><summary>كم نسبة زكاة المال؟</summary><p>ربع العشر، يعني 2.5% من المال اللي بلغ النصاب وحال عليه الحول الهجري.</p></details>
+      <details><summary>كيف أحسب الذهب عيار 21؟</summary><p>عيار 21 فيه 21 جزء ذهب من 24، فالجرام منه يساوي 0.875 جرام صافي. الحاسبة تحسبها لحالها.</p></details>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><a href="../">خانة</a><a href="salary.html">باقي على الراتب</a><a href="vat.html">حاسبة الضريبة</a><a href="jamiya.html">حاسبة الجمعية</a><a href="../privacy.html">الخصوصية</a><span class="copy">© 2026 خانة</span></div></footer>
+<script src="../assets/site.js"></script>
+<script src="../assets/tools.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khanah.app/sitemap.xml
